@@ -1,0 +1,128 @@
+:root{
+    --dark-color: #090909;
+    --semi-dark-color: #171717;
+    --violet-color: #711BFF;
+    --blue-color: #1D8DFF;
+    --darkblue-color: #0046B9;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+.hero__section{
+    background: url('../img/bg.png') no-repeat center bottom;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.hero__section .nav__container{
+    padding-top: 20px;
+    min-height: 60px;
+}
+
+.hero__section .nav__container .navbar{
+    justify-content: space-between;
+    display: flex;
+    min-height: 60px;
+    width: 75%;
+    margin: auto;
+}
+
+.hero__section .nav__container .navbar .nav__logo{
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+}
+
+.hero__section .nav__container .navbar .nav__logo img{
+    min-height: 30px;
+}
+
+.hero__section .nav__container .nav__links{
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.hero__section .nav__container .nav__links li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.hero__section .nav__container .nav__links li a {
+    background:
+      linear-gradient(
+        to right,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+  }
+
+.hero__section .nav__container .nav__links li a {
+background:
+    linear-gradient(
+    to right,
+    transparent,
+    transparent
+    ),
+    linear-gradient(
+    to right,
+    rgba(255, 0, 0, 1),
+    rgba(255, 0, 180, 1),
+    rgba(0, 100, 200, 1)
+);
+background-size: 100% 5px, 0 5px;
+}
+
+.hero__section .nav__container .nav__links li a {
+    background:
+      linear-gradient(
+        to right,
+        transparent,
+        transparent
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 5px, 0 5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+}
+
+.hero__section .nav__container .nav__links li a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.hero__section .nav__container .nav__links li a {
+    background:
+      linear-gradient(
+        to right,
+        transparent,
+        transparent
+      ),
+      linear-gradient(to right, rgba(199, 227, 255, 0.413187) 0%, rgba(29, 141, 255, 0.8) 0.01%, rgba(113, 27, 255, 0.4) 44.79%, rgba(113, 27, 255, 0.552) 64.58%, rgba(113, 27, 255, 0.8) 100%);
+    background-size: 100% 5px, 0 5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
