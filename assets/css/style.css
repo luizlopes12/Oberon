@@ -518,7 +518,7 @@ body {
 .projects__section .cards .left__cards .texts {
    display: flex;
    flex-direction: column;
-   width: 75%;
+   width: 100%;
    gap: 20px;
    position: relative;
 }
