@@ -644,6 +644,9 @@ body {
         padding-left: 0;
         gap: 5px;
     }
+    .projects__section .cards .right__cards{
+        gap: 5px;
+    }
 }
 
 @media (max-width: 320px) {
