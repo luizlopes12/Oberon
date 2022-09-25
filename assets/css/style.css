@@ -27,7 +27,7 @@ body {
     background-attachment: fixed;
 }
 
-.fixed__nav{
+.fixed__nav {
     position: fixed;
     top: 0;
     width: 100%;
@@ -219,7 +219,8 @@ body {
     top: -36px;
     left: -20px;
 }
-.about__section{
+
+.about__section {
     background-color: var(--dark-color);
     font-family: 'Outfit', sans-serif;
 }
@@ -234,26 +235,27 @@ body {
     text-align: end;
 
 }
-.about__section .about__text{
+
+.about__section .about__text {
     font-size: 1.4rem;
     line-height: 1;
     color: #fff;
 }
 
-.about__section .our__values{
+.about__section .our__values {
     background: #fff;
 }
 
-.about__section .our__values .title{
+.about__section .our__values .title {
     color: var(--darkblue-color);
 }
 
-.about__section .our__values__bg{
+.about__section .our__values__bg {
     background: url('../img/oberon-tipo.png') no-repeat center center;
     background-size: cover;
 }
 
-.projects__section .projects__title{
+.projects__section .projects__title {
     font-size: 4rem;
     line-height: 1.2;
     font-weight: 800;
@@ -264,17 +266,18 @@ body {
     text-transform: uppercase;
 }
 
-.projects__section .projects__text{
+.projects__section .projects__text {
     font-size: 1.4rem;
     border-left: 5px solid var(--violet-color);
 }
 
-.projects__section .cards{
+.projects__section .cards {
     margin-top: 3rem;
     display: flex;
     gap: 80px;
 }
-.projects__section .cards .recent{
+
+.projects__section .cards .recent {
     text-transform: uppercase;
     transform: rotate(-90deg);
     width: fit-content;
@@ -298,31 +301,31 @@ body {
 }
 
 .projects__section .cards .left__cards .texts {
-   display: flex;
-   flex-direction: column;
-   width: 50%;
-   gap: 20px;
-   position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+    position: relative;
 }
 
-.projects__section .cards .left__cards .texts .logo img{
-   height: 40px;
+.projects__section .cards .left__cards .texts .logo img {
+    height: 40px;
 }
 
-.projects__section .cards .left__cards .project__image{
+.projects__section .cards .left__cards .project__image {
     position: absolute;
     right: -100px;
- }
+}
 
-.projects__section .cards .left__cards .project__image img{
+.projects__section .cards .left__cards .project__image img {
     height: 320px;
- }
+}
 
 .projects__section .cards .right__cards {
     flex: 1 0 20%;
 }
 
-.projects__section .cards .left__cards .texts .read__more{
+.projects__section .cards .left__cards .texts .read__more {
     z-index: 1;
     border: 0;
     font-size: 1.2rem;
@@ -332,21 +335,24 @@ body {
     width: fit-content;
 }
 
-.projects__section .cards .right__cards{
+.projects__section .cards .right__cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
 }
-.projects__section .cards .right__cards .texts{
+
+.projects__section .cards .right__cards .texts {
     color: #fff;
     padding: 80px 50px 20px 20px;
     border-radius: 20px;
 }
-.projects__section .cards .right__cards .texts.proj2{
+
+.projects__section .cards .right__cards .texts.proj2 {
     background: #DA3E1C;
 }
-.projects__section .cards .right__cards .texts.proj3{
+
+.projects__section .cards .right__cards .texts.proj3 {
     background: #00B775;
 
 }
@@ -495,52 +501,55 @@ body {
 }
 
 @media (max-width: 1000px) {
-    
-.projects__section .cards{
-    gap: 20px;
-    overflow: scroll;
-}
-.projects__section .cards .recent{
-    display: none;
-}
 
-.projects__section .cards .left__cards {
-    background: #030406;
-    border-radius: 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
-    flex: 1 0 80%;
-    color: #fff;
-    padding: 50px;
-    display: flex;
-    position: relative;
-}
+    .projects__section .cards {
+        gap: 20px;
+        overflow: scroll;
+    }
 
-.projects__section .cards .left__cards .texts {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   gap: 20px;
-   position: relative;
-}
+    .projects__section .cards .recent {
+        display: none;
+    }
 
-.projects__section .cards .left__cards .project__image img{
-    display: none;
- }
-.projects__section .cards .right__cards{
-    border-radius: 30px;
-    flex: 2 0 180%;
-    flex-direction: row;
-    color: #fff;
-    justify-content: inherit;
-    padding: 0;
-}
-.projects__section .cards .right__cards .texts{
-    color: #fff;
-    padding: 80px 80px 20px 20px;
-    border-radius: 20px;
-    font-size: 1.6rem;
-    width: 50%;
-}
+    .projects__section .cards .left__cards {
+        background: #030406;
+        border-radius: 30px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+        flex: 1 0 80%;
+        color: #fff;
+        padding: 50px;
+        display: flex;
+        position: relative;
+    }
+
+    .projects__section .cards .left__cards .texts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        position: relative;
+    }
+
+    .projects__section .cards .left__cards .project__image img {
+        display: none;
+    }
+
+    .projects__section .cards .right__cards {
+        border-radius: 30px;
+        flex: 2 0 180%;
+        flex-direction: row;
+        color: #fff;
+        justify-content: inherit;
+        padding: 0;
+    }
+
+    .projects__section .cards .right__cards .texts {
+        color: #fff;
+        padding: 80px 80px 20px 20px;
+        border-radius: 20px;
+        font-size: 1.6rem;
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -568,10 +577,12 @@ body {
         left: 0;
         right: 12%;
     }
-    .projects__section .projects__title{
+
+    .projects__section .projects__title {
         text-align: start;
     }
-    .projects__section .projects__text{
+
+    .projects__section .projects__text {
         font-size: 1.2rem;
         border-left: 0;
     }
@@ -622,48 +633,57 @@ body {
         left: -20px;
         right: 16%;
     }
+
     .about__section .about__title {
         font-size: 4rem;
         text-align: start;
     }
-    .hero__section .hero__texts .left{
+
+    .hero__section .hero__texts .left {
         margin-left: 0;
     }
-    .our__values .title.values{
+
+    .our__values .title.values {
         border-bottom: 2px solid var(--darkblue-color);
         width: fit-content;
     }
-    .projects__section .projects__title{
+
+    .projects__section .projects__title {
         font-size: 3rem;
     }
-    .projects__section .cards .right__cards .texts{
+
+    .projects__section .cards .right__cards .texts {
         padding-right: 20px;
         width: 100%;
     }
+
     .projects__section .cards {
         padding-left: 0;
         gap: 5px;
     }
-    .projects__section .cards .right__cards{
+
+    .projects__section .cards .right__cards {
         gap: 5px;
     }
 }
 
 @media (max-width: 320px) {
-.projects__section .cards {
-    padding-left: 0;
-    gap: 5px;
-}
-.projects__section .cards .left__cards {
-    padding: 30px 15px;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 60vw;
-}
-.projects__section .cards .right__cards{
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    flex: 1 0 150vw;
-}
+    .projects__section .cards {
+        padding-left: 0;
+        gap: 5px;
+    }
+
+    .projects__section .cards .left__cards {
+        padding: 30px 15px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 60vw;
+    }
+
+    .projects__section .cards .right__cards {
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        flex: 1 0 150vw;
+    }
 }
