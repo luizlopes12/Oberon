@@ -424,6 +424,71 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+.services__section{
+    background: var(--dark-color);
+    color: #fff;
+    position: relative;
+}
+.services__section .services__container{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 200px;
+}
+.services__section .side__text{
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    width: fit-content;
+    position: absolute;
+    color: #171717;
+    font-size: 3.2rem;
+    left: 60px;
+    top: 200px;
+    z-index: 0;
+}
+
+.services__cards{
+    max-width: 65%;
+    right: 0;
+    gap: 15px;
+}
+.services__cards ._card{
+    padding: 100px 15px 0px;
+    min-height: 220px;
+    max-height: 220px;
+    border-radius: 10px;
+    color: #fff;
+}
+.services__cards ._card .heading{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.services__cards ._card .text{
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.services__cards ._card.card1{
+    background: var(--dark-color);
+}
+.services__cards ._card.card2{
+    background: url('../img/ui-ux.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: -20px 15px 68px -31px #0038C8;
+}
+.services__cards ._card.card3{
+    background: url('../img/mobile-dev.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: -20px 15px 68px -31px #711BFF;
+}
+.services__cards ._card.card4{
+    background: url('../img/web-dev.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: -20px 15px 68px -31px #49A3FF;
+}
+
+
 @media(max-width: 1440px) {
     .hero__section .hero__texts {
         height: 960px;
@@ -626,6 +691,79 @@ body {
         width: 100%;
     }
 
+    .services__section{
+        background: var(--dark-color);
+        color: #fff;
+        position: relative;
+    }
+    .services__section .services__container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+    }
+    .services__section .side__text{
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        width: 100%;
+        position: absolute;
+        color: #171717;
+        font-size: 5rem;
+        left: -485px;
+        top: 390px;
+        z-index: 10;
+    }
+    
+    .services__cards{
+        max-width: 90%;
+        right: 0;
+        gap: 15px;
+        flex-direction: row;
+    }
+    .services__cards.row{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .services__cards ._card{
+        min-height: 300px;
+        width: 75%;
+    }
+    .services__cards ._card .heading{
+        font-weight: 700;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    .services__cards ._card .text{
+        font-weight: 400;
+        font-size: .9rem;
+    }
+    
+    .services__cards ._card.card1{
+        background: var(--dark-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .services__cards ._card.card2{
+        background: url('../img/ui-ux.png') no-repeat center center;
+        background-size: cover;
+        box-shadow: -20px 15px 68px -31px #0038C8;
+        margin-top: 300px;
+    }
+    .services__cards ._card.card3{
+        background: url('../img/mobile-dev.png') no-repeat center center;
+        background-size: cover;
+        box-shadow: -20px 15px 68px -31px #711BFF;
+        margin-top: 300px;
+    }
+    .services__cards ._card.card4{
+        background: url('../img/web-dev.png') no-repeat center center;
+        background-size: cover;
+        box-shadow: -20px 15px 68px -31px #49A3FF;
+        margin-top: 300px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -662,9 +800,16 @@ body {
         font-size: 1.2rem;
         border-left: 0;
     }
+    .services__section .side__text{
+        left: -390px;
+    }
+    
 }
 
 @media (max-width: 425px) {
+    .services__cards ._card{
+        width: 80%;
+    }
     .hero__section .hero__texts {
         width: 90%;
         margin: auto;
@@ -741,6 +886,16 @@ body {
     .projects__section .cards .right__cards {
         gap: 5px;
     }
+    .services__section .side__text{
+        left: -270px;
+        top: 330px;
+    }
+}
+@media (max-width: 375px) {
+    .services__section .side__text{
+        left: -250px;
+        top: 330px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -761,5 +916,8 @@ body {
         justify-content: center;
         align-items: center;
         flex: 1 0 150vw;
+    }
+    .services__section .side__text{
+        left: -220px;
     }
 }
