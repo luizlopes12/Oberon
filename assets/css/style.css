@@ -740,6 +740,8 @@ body {
     }
     
     .services__cards ._card.card1{
+        min-height: 200px;
+        max-height: 200px;
         background: var(--dark-color);
         position: absolute;
         top: 0;
@@ -750,19 +752,19 @@ body {
         background: url('../img/ui-ux.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #0038C8;
-        margin-top: 300px;
+        margin-top: 220px;
     }
     .services__cards ._card.card3{
         background: url('../img/mobile-dev.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #711BFF;
-        margin-top: 300px;
+        margin-top: 220px;
     }
     .services__cards ._card.card4{
         background: url('../img/web-dev.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #49A3FF;
-        margin-top: 300px;
+        margin-top: 220px;
     }
 }
 
