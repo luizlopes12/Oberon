@@ -275,7 +275,7 @@ body {
 
 @media(max-width: 1366px) {
     .hero__section .hero__texts {
-        height: 90vh;
+        height: 92vh;
     }
 
     .hero__section .hero__texts .right .line__text {
