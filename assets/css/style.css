@@ -641,3 +641,22 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 320px) {
+.projects__section .cards {
+    padding-left: 0;
+    gap: 5px;
+}
+.projects__section .cards .left__cards {
+    padding: 30px 15px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 60vw;
+}
+.projects__section .cards .right__cards{
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 150vw;
+}
+}
