@@ -1,4 +1,4 @@
-:root{
+:root {
     --dark-color: #090909;
     --semi-dark-color: #171717;
     --violet-color: #711BFF;
@@ -6,18 +6,20 @@
     --darkblue-color: #0046B9;
 }
 
-body{
+body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     scroll-behavior: smooth;
 }
+
 /*
     Hero section (navbar, logo, links etc)
 */
-.hero__section{
+.hero__section {
+    overflow: hidden;
     background: url('../img/bg.png') no-repeat center bottom;
     background-size: cover;
     min-height: 100vh;
@@ -25,12 +27,21 @@ body{
     background-attachment: fixed;
 }
 
-.hero__section .nav__container{
-    padding-top: 20px;
+.fixed__nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-color);
+    z-index: 9999;
+}
 
+.hero__section .nav__container {
+    font-family: 'Outfit', sans-serif;
+    padding-top: 20px;
     min-height: 60px;
 }
-.hero__section .nav__container .navbar{
+
+.hero__section .nav__container .navbar {
     justify-content: space-between;
     display: flex;
     min-height: 60px;
@@ -39,17 +50,17 @@ body{
     align-items: center;
 }
 
-.hero__section .nav__container .navbar .nav__logo{
+.hero__section .nav__container .navbar .nav__logo {
     display: flex;
     align-items: center;
     min-height: 60px;
 }
 
-.hero__section .nav__container .navbar .nav__logo img{
+.hero__section .nav__container .navbar .nav__logo img {
     min-height: 30px;
 }
 
-.hero__section .nav__container .nav__links{
+.hero__section .nav__container .nav__links {
     display: flex;
     list-style: none;
     width: 60%;
@@ -57,7 +68,7 @@ body{
     gap: 40px;
 }
 
-.hero__section .nav__container .nav__links li a{
+.hero__section .nav__container .nav__links li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
@@ -66,48 +77,36 @@ body{
 
 .hero__section .nav__container .nav__links li a {
     background:
-      linear-gradient(
-        to right,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 1),
-        rgba(255, 0, 180, 1),
-        rgba(0, 100, 200, 1)
-    );
-  }
-
-.hero__section .nav__container .nav__links li a {
-background:
-    linear-gradient(
-    to right,
-    transparent,
-    transparent
-    ),
-    linear-gradient(
-    to right,
-    rgba(255, 0, 0, 1),
-    rgba(255, 0, 180, 1),
-    rgba(0, 100, 200, 1)
-);
-background-size: 100% 5px, 0 5px;
+        linear-gradient(to right,
+            transparent,
+            transparent),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
 }
 
 .hero__section .nav__container .nav__links li a {
     background:
-      linear-gradient(
-        to right,
-        transparent,
-        transparent
-      ),
-      linear-gradient(
-        to right,
-        rgba(255, 0, 0, 1),
-        rgba(255, 0, 180, 1),
-        rgba(0, 100, 200, 1)
-    );
+        linear-gradient(to right,
+            transparent,
+            transparent),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
+    background-size: 100% 5px, 0 5px;
+}
+
+.hero__section .nav__container .nav__links li a {
+    background:
+        linear-gradient(to right,
+            transparent,
+            transparent),
+        linear-gradient(to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1));
     background-size: 100% 5px, 0 5px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -119,68 +118,75 @@ background-size: 100% 5px, 0 5px;
 
 .hero__section .nav__container .nav__links li a {
     background:
-      linear-gradient(
-        to right,
-        transparent,
-        transparent
-      ),
-      linear-gradient(to right, rgba(199, 227, 255, 0.413187) 0%, rgba(29, 141, 255, 0.8) 0.01%, rgba(113, 27, 255, 0.4) 44.79%, rgba(113, 27, 255, 0.552) 64.58%, rgba(113, 27, 255, 0.8) 100%);
+        linear-gradient(to right,
+            transparent,
+            transparent),
+        linear-gradient(to right, rgba(199, 227, 255, 0.413187) 0%, rgba(29, 141, 255, 0.8) 0.01%, rgba(113, 27, 255, 0.4) 44.79%, rgba(113, 27, 255, 0.552) 64.58%, rgba(113, 27, 255, 0.8) 100%);
     background-size: 100% 5px, 0 5px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
-  }
-  .mobile__menu{
-    display: none;
-  }
+}
 
-  .hero__section .hero__texts{
+.mobile__menu {
+    display: none;
+}
+
+.hero__section .hero__texts {
     height: 90vh;
     display: flex;
     align-items: center;
     color: #fff;
-  }
-  .hero__section .hero__texts .left{
+}
+
+.hero__section .hero__texts .left {
     margin-left: 12.5%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .hero__section .hero__texts .left h1{
+}
+
+.hero__section .hero__texts .left h1 {
     font-weight: 700;
     font-size: 3.5rem;
     max-width: 70%;
     margin-bottom: 0;
-  }
-  .hero__section .hero__texts .left p{
+}
+
+.hero__section .hero__texts .left p {
     font-weight: 500;
     color: #F7F7F7;
     max-width: 70%;
     font-size: 1.5rem;
-  }
-  .hero__section .hero__texts .left button{
+}
+
+.hero__section .hero__texts .left button {
+    z-index: 1;
     border: 0;
     font-size: 1.8rem;
     color: #fff;
     padding: 18px 100px;
     background: linear-gradient(90deg, rgba(199, 227, 255, 0.413187) 0%, rgba(29, 141, 255, 0.8) 0.01%, rgba(113, 27, 255, 0.4) 44.79%, rgba(113, 27, 255, 0.552) 64.58%, rgba(113, 27, 255, 0.8) 100%), #1D8DFF;
-    border-radius: 40px 0px;;
+    border-radius: 40px 0px;
+    ;
     width: fit-content;
-  }
+}
 
-  .hero__section .hero__texts{
+.hero__section .hero__texts {
     position: relative;
-  }
+}
 
-  .hero__section .hero__texts .right{
+.hero__section .hero__texts .right {
     width: 50%;
     display: flex;
     justify-content: center;
-  }
-  .hero__section .hero__texts .right img{
+}
+
+.hero__section .hero__texts .right img {
     height: 100px;
-  }
-  .hero__section .hero__texts .right .line__text{
+}
+
+.hero__section .hero__texts .right .line__text {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
     padding: 100px 100px 390px 330px;
@@ -188,20 +194,23 @@ background-size: 100% 5px, 0 5px;
     position: absolute;
     bottom: -50px;
     right: 100px;
-  }
+}
 
-  .hero__section .hero__texts .right .line__text strike{
+.hero__section .hero__texts .right .line__text strike {
     font-weight: 100;
-  }
-  .hero__section .hero__texts .right .line__text p{
+}
+
+.hero__section .hero__texts .right .line__text p {
     width: 100px;
     font-size: 1.3rem;
-  }
-  .hero__section .hero__texts .right img{
+}
+
+.hero__section .hero__texts .right img {
     margin-top: -120px;
     margin-left: -200px;
-  }
-  .hero__section .hero__texts .right .circle{
+}
+
+.hero__section .hero__texts .right .circle {
     padding: 15px;
     background: #ffffff;
     border-radius: 50%;
@@ -209,12 +218,51 @@ background-size: 100% 5px, 0 5px;
     position: absolute;
     top: -36px;
     left: -20px;
-  }
-  @media(max-width: 1440px){
-    .hero__section .hero__texts .right .line__text{
+}
+.about__section{
+    background-color: var(--dark-color);
+    font-family: 'Outfit', sans-serif;
+}
+
+.about__section .about__title {
+    font-size: 5.5rem;
+    line-height: 1;
+    font-weight: 800;
+    background: linear-gradient(270deg, #711BFF 36.11%, rgba(29, 141, 255, 0) 100%), #1D8DFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: end;
+
+}
+.about__section .about__text{
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.our__values{
+    background: #fff;
+}
+
+.our__values .title{
+    color: var(--darkblue-color);
+}
+
+.our__values__bg{
+    background: url('../img/oberon-tipo.png') no-repeat center center;
+    background-size: cover;
+}
+
+@media(max-width: 1440px) {
+    .hero__section .hero__texts {
+        height: 960px;
+    }
+
+    .hero__section .hero__texts .right .line__text {
         padding: 100px 100px 388px 115px;
-      }
-      .hero__section .hero__texts .right .circle{
+    }
+
+    .hero__section .hero__texts .right .circle {
         padding: 15px;
         background: #ffffff;
         border-radius: 50%;
@@ -222,40 +270,65 @@ background-size: 100% 5px, 0 5px;
         position: absolute;
         top: -36px;
         left: -20px;
-      }
-  }
-  @media(max-width: 1024px){
-    .hero__section .hero__texts .right .line__text{
+    }
+}
+
+@media(max-width: 1366px) {
+    .hero__section .hero__texts {
+        height: 90vh;
+    }
+
+    .hero__section .hero__texts .right .line__text {
+        padding: 100px 100px 200px 90px;
+    }
+
+    .hero__section .hero__texts .right .circle {
+        padding: 15px;
+        background: #ffffff;
+        border-radius: 50%;
+        margin-top: 20px;
+        position: absolute;
+        top: -36px;
+        left: -20px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .hero__section .hero__texts .right .line__text {
         border-top: 0;
         border-right: 0;
-        border-bottom:  2px solid #fff;
+        border-bottom: 2px solid #fff;
         padding: 100px 100px 10px 65px;
         bottom: 50px;
         left: 0;
         right: 10%;
-      }
-      .hero__section .hero__texts .right .line__text p{
+    }
+
+    .hero__section .hero__texts .right .line__text p {
         display: none;
-      }
-      .hero__section .hero__texts .right img{
+    }
+
+    .hero__section .hero__texts .right img {
         margin-top: 0;
         margin-left: 0;
         position: absolute;
         bottom: 0;
         right: 5%;
-      }
-      .hero__section .hero__texts .right .circle{
+    }
+
+    .hero__section .hero__texts .right .circle {
         top: auto;
         left: auto;
         bottom: -15px;
         right: -1%;
-      }
-  }
+    }
+}
+
 /*
     Mobile
-*/  
+*/
 @media (max-width: 1300px) {
-    .hero__section .nav__container .navbar{
+    .hero__section .nav__container .navbar {
         justify-content: space-between;
         display: flex;
         min-height: 60px;
@@ -264,11 +337,12 @@ background-size: 100% 5px, 0 5px;
         align-items: center;
 
     }
-    .hero__section .nav__container .navbar .nav__logo img{
+
+    .hero__section .nav__container .navbar .nav__logo img {
         min-height: 25px;
     }
 
-    .mobile__menu{
+    .mobile__menu {
         width: 40px;
         display: flex;
         flex-direction: column;
@@ -276,15 +350,18 @@ background-size: 100% 5px, 0 5px;
         gap: 8px;
         align-items: center;
     }
-    .mobile__menu div{
+
+    .mobile__menu div {
         border-radius: 5px;
         background: #fff;
         border: 2px solid #fff;
         width: 80%;
         transition: all .3s ease-in-out;
     }
-    .hero__section .nav__container .nav__links{
+
+    .hero__section .nav__container .nav__links {
         background: var(--dark-color);
+        z-index: 2;
         position: fixed;
         min-height: 100vh;
         min-width: 100%;
@@ -297,84 +374,109 @@ background-size: 100% 5px, 0 5px;
         transform: translateX(100%);
         transition: all .3s ease-in-out;
     }
-    .hero__section .nav__container .nav__links li{
+
+    .hero__section .nav__container .nav__links li {
         text-align: center;
-    } 
-    .hero__section .nav__container .nav__links.open{
+    }
+
+    .hero__section .nav__container .nav__links.open {
         transform: translateX(0);
     }
-    .mobile__menu.open .line1{
+
+    .mobile__menu.open .line1 {
         transform: rotate(-45deg) translate(-10px, 8px);
     }
-    .mobile__menu.open .line2{
+
+    .mobile__menu.open .line2 {
         opacity: 0;
     }
-    .mobile__menu.open .line3{
+
+    .mobile__menu.open .line3 {
         transform: rotate(45deg) translate(-8px, -7px);
     }
 }
 
 @media (max-width: 768px) {
-    .hero__section{
+    .hero__section {
         background: url('../img/bg-mobile.png') no-repeat center bottom;
         background-size: cover;
         min-height: 100vh;
         min-width: 100%;
         background-attachment: fixed;
     }
+
     .hero__section .hero__texts .right .circle {
         top: auto;
         left: auto;
         bottom: -15px;
         right: 0%;
     }
-    .hero__section .hero__texts .right .line__text{
+
+    .hero__section .hero__texts .right .line__text {
         border-top: 0;
         border-right: 0;
-        border-bottom:  2px solid #fff;
+        border-bottom: 2px solid #fff;
         padding: 100px 100px 10px 65px;
         bottom: 50px;
         left: 0;
         right: 12%;
-      }
+    }
 }
 
-@media (max-width: 320px) {
-    .hero__section .hero__texts{
+@media (max-width: 425px) {
+    .hero__section .hero__texts {
         width: 90%;
         margin: auto;
     }
-    .hero__section .hero__texts{
+
+    .hero__section .hero__texts {
         height: 700px;
     }
-    .hero__section .hero__texts .left{
+
+    .hero__section .hero__texts .left {
         display: flex;
         justify-content: center;
     }
-    .hero__section .hero__texts .left h1{
+
+    .hero__section .hero__texts .left h1 {
         max-width: 100%;
     }
-    .hero__section .hero__texts .left p{
+
+    .hero__section .hero__texts .left p {
         max-width: 100%;
     }
-    .hero__section .hero__texts .left button{
+
+    .hero__section .hero__texts .left button {
         width: 100%;
         margin: auto;
         padding: 18px 80px;
     }
-    .hero__section .hero__texts .left{
+
+    .hero__section .hero__texts .left {
         margin-left: auto;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .hero__section .hero__texts .right .line__text{
+
+    .hero__section .hero__texts .right .line__text {
         border-top: 0;
         border-right: 0;
-        border-bottom:  2px solid #fff;
+        border-bottom: 2px solid #fff;
         padding: 100px 100px 10px 65px;
         bottom: 50px;
         left: -20px;
         right: 16%;
-      }
+    }
+    .about__section .about__title {
+        font-size: 4rem;
+        text-align: start;
+    }
+    .hero__section .hero__texts .left{
+        margin-left: 0;
+    }
+    .our__values .title.values{
+        border-bottom: 2px solid var(--darkblue-color);
+        width: fit-content;
+    }
 }
