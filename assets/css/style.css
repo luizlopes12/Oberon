@@ -420,6 +420,9 @@ body {
     width: 100%;
     margin: auto;
 }
+.team__section .team__members .member__card a img{
+    width: 30px;
+ }
 .team_container{
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
@@ -487,7 +490,66 @@ body {
     background-size: cover;
     box-shadow: -20px 15px 68px -31px #49A3FF;
 }
+.footer__section{
+    min-height: 250px;
+    overflow: hidden;
+    background: var(--dark-color);
+    position: relative;
+}
+.footer__section .footer__bg{
+    min-height: 250px;
+    transform: translateY(140px);
+    border-radius: 50%;
+    background: var(--dark-color);
+    z-index: -1;
+}
+.footer__section .footer__bg:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #4A21FF 0%, #4DA3FF 100% );
+    transform: translate3d(0px, -15px, 0) scale(0.95);
+    filter: blur(30px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
 
+.footer__section .footer__bg::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.footer__section .footer__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    bottom: 30px;
+    position: absolute;
+}
+
+.footer__section .footer__content .socials{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+}
+.footer__section .footer__content .socials a img{
+    width: 50px;
+ }
 
 @media(max-width: 1440px) {
     .hero__section .hero__texts {

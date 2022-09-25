@@ -7,7 +7,7 @@ const mobileNavBar = () =>{
 }
 
 window.onscroll = () =>{
-    if(window.scrollY > 10){
+    if(window.scrollY > 0){
         document.querySelector('.hero__section .nav__container').classList.add('fixed__nav')
     }else{
         document.querySelector('.hero__section .nav__container').classList.remove('fixed__nav')
