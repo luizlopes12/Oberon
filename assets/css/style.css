@@ -636,4 +636,8 @@ body {
     .projects__section .projects__title{
         font-size: 3rem;
     }
+    .projects__section .cards .right__cards .texts{
+        padding-right: 20px;
+        width: 100%;
+    }
 }
