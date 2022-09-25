@@ -240,17 +240,115 @@ body {
     color: #fff;
 }
 
-.our__values{
+.about__section .our__values{
     background: #fff;
 }
 
-.our__values .title{
+.about__section .our__values .title{
     color: var(--darkblue-color);
 }
 
-.our__values__bg{
+.about__section .our__values__bg{
     background: url('../img/oberon-tipo.png') no-repeat center center;
     background-size: cover;
+}
+
+.projects__section .projects__title{
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 800;
+    background: linear-gradient(270deg, #711BFF 36.11%, rgba(29, 141, 255, 0) 100%), #1D8DFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: end;
+    text-transform: uppercase;
+}
+
+.projects__section .projects__text{
+    font-size: 1.4rem;
+    border-left: 5px solid var(--violet-color);
+}
+
+.projects__section .cards{
+    margin-top: 3rem;
+    display: flex;
+    gap: 80px;
+}
+.projects__section .cards .recent{
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    width: fit-content;
+    position: absolute;
+    color: #D3D3D3;
+    font-size: 3.5rem;
+    left: -220px;
+    top: 168px;
+    z-index: -1;
+}
+
+.projects__section .cards .left__cards {
+    background: #030406;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+    flex: 2 0 60%;
+    color: #fff;
+    padding: 80px;
+    display: flex;
+    position: relative;
+}
+
+.projects__section .cards .left__cards .texts {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   gap: 20px;
+   position: relative;
+}
+
+.projects__section .cards .left__cards .texts .logo img{
+   height: 40px;
+}
+
+.projects__section .cards .left__cards .project__image{
+    position: absolute;
+    right: -100px;
+ }
+
+.projects__section .cards .left__cards .project__image img{
+    height: 320px;
+ }
+
+.projects__section .cards .right__cards {
+    flex: 1 0 20%;
+}
+
+.projects__section .cards .left__cards .texts .read__more{
+    z-index: 1;
+    border: 0;
+    font-size: 1.2rem;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 25px 0px;
+    width: fit-content;
+}
+
+.projects__section .cards .right__cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.projects__section .cards .right__cards .texts{
+    color: #fff;
+    padding: 80px 50px 20px 20px;
+    border-radius: 20px;
+}
+.projects__section .cards .right__cards .texts.proj2{
+    background: #DA3E1C;
+}
+.projects__section .cards .right__cards .texts.proj3{
+    background: #00B775;
+
 }
 
 @media(max-width: 1440px) {
@@ -396,6 +494,55 @@ body {
     }
 }
 
+@media (max-width: 1000px) {
+    
+.projects__section .cards{
+    gap: 20px;
+    overflow: scroll;
+}
+.projects__section .cards .recent{
+    display: none;
+}
+
+.projects__section .cards .left__cards {
+    background: #030406;
+    border-radius: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+    flex: 1 0 80%;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    position: relative;
+}
+
+.projects__section .cards .left__cards .texts {
+   display: flex;
+   flex-direction: column;
+   width: 75%;
+   gap: 20px;
+   position: relative;
+}
+
+.projects__section .cards .left__cards .project__image img{
+    display: none;
+ }
+.projects__section .cards .right__cards{
+    border-radius: 30px;
+    flex: 2 0 180%;
+    flex-direction: row;
+    color: #fff;
+    justify-content: inherit;
+    padding: 0;
+}
+.projects__section .cards .right__cards .texts{
+    color: #fff;
+    padding: 80px 80px 20px 20px;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    width: 50%;
+}
+}
+
 @media (max-width: 768px) {
     .hero__section {
         background: url('../img/bg-mobile.png') no-repeat center bottom;
@@ -420,6 +567,13 @@ body {
         bottom: 50px;
         left: 0;
         right: 12%;
+    }
+    .projects__section .projects__title{
+        text-align: start;
+    }
+    .projects__section .projects__text{
+        font-size: 1.2rem;
+        border-left: 0;
     }
 }
 
