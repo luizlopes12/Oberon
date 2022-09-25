@@ -633,4 +633,8 @@ body {
         border-bottom: 2px solid var(--darkblue-color);
         width: fit-content;
     }
+    .projects__section .projects__title{
+        font-size: 3rem;
+    }
+
 }
