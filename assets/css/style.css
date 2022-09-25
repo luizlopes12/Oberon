@@ -357,6 +357,10 @@ body {
 
 }
 
+.projects__section .projects__link{
+    color: var(--violet-color);
+}
+
 @media(max-width: 1440px) {
     .hero__section .hero__texts {
         height: 960px;
