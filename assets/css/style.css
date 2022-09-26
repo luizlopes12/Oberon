@@ -421,7 +421,7 @@ body {
     margin: auto;
 }
 .team__section .team__members .member__card a img{
-    width: 30px;
+    width: 20px;
  }
 .team_container{
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -548,7 +548,7 @@ body {
    justify-content: center;
 }
 .footer__section .footer__content .socials a img{
-    width: 50px;
+    width: 30px;
  }
 
 @media(max-width: 1440px) {
