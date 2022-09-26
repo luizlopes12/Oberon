@@ -357,15 +357,16 @@ body {
 
 }
 
-.projects__section .projects__link{
+.projects__section .projects__link {
     color: var(--violet-color);
 }
-.team__section{
+
+.team__section {
     background: var(--dark-color);
     color: #fff;
 }
 
-.team__section .team__title{
+.team__section .team__title {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 0;
@@ -377,11 +378,11 @@ body {
     text-transform: uppercase;
 }
 
-.team__section .team__subtitle{
+.team__section .team__subtitle {
     font-size: 1.2rem;
 }
 
-.team__section .team__members .member__card{
+.team__section .team__members .member__card {
     background: rgba(9, 9, 9, 0.1);
     display: flex;
     padding: 10px 30px;
@@ -390,26 +391,31 @@ body {
     position: relative;
     padding-bottom: 40px;
 }
-.team__section .team__members .member__card.card1{
+
+.team__section .team__members .member__card.card1 {
     box-shadow: -20px 15px 68px -31px #49A3FF;
 }
-.team__section .team__members .member__card.card2{
+
+.team__section .team__members .member__card.card2 {
     box-shadow: -20px 15px 68px -31px #0038c8;
 }
-.team__section .team__members .member__card.card3{
+
+.team__section .team__members .member__card.card3 {
     box-shadow: -20px 15px 68px -31px #711BFF;
 }
 
 
-.team__section .team__members .member__card .name{
+.team__section .team__members .member__card .name {
     font-size: 1.2rem;
     margin-bottom: 0;
 }
-.team__section .team__members .member__card .role{
+
+.team__section .team__members .member__card .role {
     position: relative;
     font-size: .8rem;
 }
-.team__section .team__members .member__card .socials{
+
+.team__section .team__members .member__card .socials {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -420,25 +426,29 @@ body {
     width: 100%;
     margin: auto;
 }
-.team__section .team__members .member__card a img{
+
+.team__section .team__members .member__card a img {
     width: 20px;
- }
-.team_container{
+}
+
+.team_container {
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.services__section{
+.services__section {
     background: var(--dark-color);
     color: #fff;
     position: relative;
 }
-.services__section .services__container{
+
+.services__section .services__container {
     position: relative;
     display: flex;
     justify-content: flex-end;
     padding-bottom: 200px;
 }
-.services__section .side__text{
+
+.services__section .side__text {
     text-transform: uppercase;
     transform: rotate(-90deg);
     width: fit-content;
@@ -450,59 +460,68 @@ body {
     z-index: 0;
 }
 
-.services__cards{
+.services__cards {
     max-width: 65%;
     right: 0;
     gap: 15px;
 }
-.services__cards ._card{
+
+.services__cards ._card {
     padding: 100px 15px 0px;
     min-height: 220px;
     max-height: 220px;
     border-radius: 10px;
     color: #fff;
 }
-.services__cards ._card .heading{
+
+.services__cards ._card .heading {
     font-weight: 700;
     font-size: 1rem;
     margin-bottom: 0;
 }
-.services__cards ._card .text{
+
+.services__cards ._card .text {
     font-weight: 400;
     font-size: .9rem;
 }
 
-.services__cards ._card.card1{
+.services__cards ._card.card1 {
     background: var(--dark-color);
 }
-.services__cards ._card.card2{
+
+.services__cards ._card.card2 {
     background: url('../img/ui-ux.png') no-repeat center center;
     background-size: cover;
     box-shadow: -20px 15px 68px -31px #0038C8;
 }
-.services__cards ._card.card3{
+
+.services__cards ._card.card3 {
     background: url('../img/mobile-dev.png') no-repeat center center;
     background-size: cover;
     box-shadow: -20px 15px 68px -31px #711BFF;
 }
-.services__cards ._card.card4{
+
+.services__cards ._card.card4 {
     background: url('../img/web-dev.png') no-repeat center center;
     background-size: cover;
     box-shadow: -20px 15px 68px -31px #49A3FF;
 }
-.footer__section{
+
+.footer__section {
     min-height: 250px;
     overflow: hidden;
     background: var(--dark-color);
     position: relative;
 }
-.footer__section .footer__bg{
+
+.footer__section .footer__bg {
     min-height: 250px;
     transform: translateY(140px);
     border-radius: 50%;
     background: var(--dark-color);
     z-index: -1;
 }
+
 .footer__section .footer__bg:before {
     content: "";
     z-index: -1;
@@ -511,7 +530,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(-45deg, #4A21FF 0%, #4DA3FF 100% );
+    background: linear-gradient(-45deg, #4A21FF 0%, #4DA3FF 100%);
     transform: translate3d(0px, -15px, 0) scale(0.95);
     filter: blur(30px);
     opacity: var(0.7);
@@ -531,7 +550,7 @@ body {
     border-radius: inherit;
 }
 
-.footer__section .footer__content{
+.footer__section .footer__content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -542,14 +561,15 @@ body {
     position: absolute;
 }
 
-.footer__section .footer__content .socials{
-   display: flex;
-   gap: 20px;
-   justify-content: center;
+.footer__section .footer__content .socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
-.footer__section .footer__content .socials a img{
+
+.footer__section .footer__content .socials a img {
     width: 30px;
- }
+}
 
 @media(max-width: 1440px) {
     .hero__section .hero__texts {
@@ -745,27 +765,31 @@ body {
         font-size: 1.6rem;
         width: 50%;
     }
-    .team__members{
+
+    .team__members {
         flex-direction: column;
         margin: auto;
         gap: 50px;
     }
-    .team__members .member__card{
+
+    .team__members .member__card {
         width: 100%;
     }
 
-    .services__section{
+    .services__section {
         background: var(--dark-color);
         color: #fff;
         position: relative;
     }
-    .services__section .services__container{
+
+    .services__section .services__container {
         position: relative;
         display: flex;
         justify-content: center;
         padding-bottom: 200px;
     }
-    .services__section .side__text{
+
+    .services__section .side__text {
         text-transform: uppercase;
         transform: rotate(-90deg);
         width: 100%;
@@ -776,33 +800,37 @@ body {
         top: 390px;
         z-index: 10;
     }
-    
-    .services__cards{
+
+    .services__cards {
         max-width: 90%;
         right: 0;
         gap: 15px;
         flex-direction: row;
     }
-    .services__cards.row{
+
+    .services__cards.row {
         flex-wrap: nowrap;
         overflow-x: scroll;
         overflow-y: hidden;
     }
-    .services__cards ._card{
+
+    .services__cards ._card {
         min-height: 300px;
         width: 75%;
     }
-    .services__cards ._card .heading{
+
+    .services__cards ._card .heading {
         font-weight: 700;
         font-size: 1rem;
         margin-bottom: 0;
     }
-    .services__cards ._card .text{
+
+    .services__cards ._card .text {
         font-weight: 400;
         font-size: .9rem;
     }
-    
-    .services__cards ._card.card1{
+
+    .services__cards ._card.card1 {
         min-height: 200px;
         max-height: 200px;
         background: var(--dark-color);
@@ -811,19 +839,22 @@ body {
         left: 0;
         width: 100%;
     }
-    .services__cards ._card.card2{
+
+    .services__cards ._card.card2 {
         background: url('../img/ui-ux.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #0038C8;
         margin-top: 220px;
     }
-    .services__cards ._card.card3{
+
+    .services__cards ._card.card3 {
         background: url('../img/mobile-dev.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #711BFF;
         margin-top: 220px;
     }
-    .services__cards ._card.card4{
+
+    .services__cards ._card.card4 {
         background: url('../img/web-dev.png') no-repeat center center;
         background-size: cover;
         box-shadow: -20px 15px 68px -31px #49A3FF;
@@ -865,16 +896,18 @@ body {
         font-size: 1.2rem;
         border-left: 0;
     }
-    .services__section .side__text{
+
+    .services__section .side__text {
         left: -390px;
     }
-    
+
 }
 
 @media (max-width: 425px) {
-    .services__cards ._card{
+    .services__cards ._card {
         width: 80%;
     }
+
     .hero__section .hero__texts {
         width: 90%;
         margin: auto;
@@ -951,13 +984,15 @@ body {
     .projects__section .cards .right__cards {
         gap: 5px;
     }
-    .services__section .side__text{
+
+    .services__section .side__text {
         left: -270px;
         top: 330px;
     }
 }
+
 @media (max-width: 375px) {
-    .services__section .side__text{
+    .services__section .side__text {
         left: -250px;
         top: 330px;
     }
@@ -982,7 +1017,8 @@ body {
         align-items: center;
         flex: 1 0 150vw;
     }
-    .services__section .side__text{
+
+    .services__section .side__text {
         left: -220px;
     }
 }
