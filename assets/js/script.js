@@ -13,3 +13,31 @@ window.onscroll = () =>{
         document.querySelector('.hero__section .nav__container').classList.remove('fixed__nav')
     }
 }
+
+//xml
+/* importando o xml e colocando a lista na variavel textsArray*/
+const putTexts = async () =>{
+    let textsArray;
+    await fetch('../xml/texts.xml')
+    .then(response => response.text())
+    .then(xml => {
+        let xmlContent = xml;
+        let parser = new DOMParser();
+        let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+        let texts = xmlDOM.querySelectorAll('title');
+    
+        
+        textsArray = texts
+    })
+
+    console.log(textsArray)
+    let divsXml = document.querySelectorAll('[data-text]')
+    divsXml.forEach((item, index) =>{
+        console.log(textsArray[index].dataset)
+        if(item.dataset.text == textsArray[index].attributes.val.value){
+            item.innerHTML = textsArray[index].innerHTML
+        }
+    })
+}
+
+putTexts()
