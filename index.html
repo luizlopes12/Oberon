@@ -10,6 +10,7 @@
     <link rel="icon" href="./assets/img/fav-icon.png">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <script src="./assets/js/script.js" defer></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;500;700;900&display=swap" rel="stylesheet">
@@ -29,18 +30,18 @@
                     <div class="line3"></div>
                 </div>
                 <ul class="nav__links">
-                    <li><a href="#" onclick="mobileNavBar()">Quem somos</a></li>
-                    <li><a href="#" onclick="mobileNavBar()">Projetos</a></li>
-                    <li><a href="#" onclick="mobileNavBar()">Nosso Time</a></li>
-                    <li><a href="#" onclick="mobileNavBar()">Serviços</a></li>
+                    <li><a href="#about" onclick="mobileNavBar()">Quem somos</a></li>
+                    <li><a href="#projects" onclick="mobileNavBar()">Projetos</a></li>
+                    <li><a href="#team" onclick="mobileNavBar()">Nosso Time</a></li>
+                    <li><a href="#services" onclick="mobileNavBar()">Serviços</a></li>
                 </ul>
             </nav>
         </nav>
         <div class="hero__texts">
             <div class="left">
-                <h1>LOREM IPSUM DANE-SE</h1>
-                <p>Mais lorem ipsum porque não sei o que escrever</p>
-                <button>navegue</button>
+                <div id="xml"><h1 data-text="title"></h1></div>
+                <p class="subtitle"> Atividades simples são uma oportunidade de melhora e eficiência.  </p>
+                <a href="#about"><button>navegue</button></a>
             </div>
             <div class="right">
                 <img src="./assets/img/hero-circle.png" alt="">
@@ -56,11 +57,12 @@
             </div>
         </div>
     </section>
-    <section class="about__section container-fluid pb-5">
+
+    <section id="about" class="about__section container-fluid pb-5">
         <div class="container row mx-auto justify-content-between align-items-center">
             <div class="col-sm-12 col-md-4 about__title mb-5">QUEM SOMOS</div>
-            <div class="col-sm-12 col-md-7 about__text">A Oberon existe porque precisamos de ideias tecnológicas
-                revolucionarias para as pessoas e o meio ambiente. Somos uma equipe comprometida com a inovação para
+            <div class="col-sm-12 col-md-7 about__text">A Oberon existe porque precisamos de ideias tecnológicas e
+                revolucionárias para as pessoas e o meio ambiente. Somos uma equipe comprometida com a inovação para
                 melhorar a qualidade de vida do ser humano e do próprio planeta.</div>
         </div>
         <div class="container-fluid our__values__bg ">
@@ -82,16 +84,17 @@
                         </p>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <p class="title fs-3 mb-1">Ambição</p>
+                        <p class="title fs-3 mb-1">Integridade</p>
                         <p class="text fs-5">
-                            Visões para o futuro, direcionando soluções que gerem ipacto.
+                            Guiados por uma bússola moral com respeito por todas as partes interessadas.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects__section container-fluid pb-5">
+
+    <section id="projects" class="projects__section container-fluid pb-5">
         <div class="container row mx-auto justify-content-between align-items-center mt-5">
             <div class="col-sm-12 col-md-4 projects__title px-3">Projetos</div>
             <div class="col-sm-12 col-md-8 projects__text">Veja como é feito o nosso trabalho e confira os projetos mais
@@ -110,7 +113,7 @@
                             uma interface onde o usuário pode controlar esses periféricos.
                         </p>
                         <button class="read__more">
-                            Ler mais sobre
+                            <a href="pages/odin.html">Ler mais sobre</a> 
                         </button>
                     </div>
                     <div class="project__image">
@@ -140,7 +143,8 @@
             <a class="fs-5 projects__link" href="#">ver todos os projetos</a>
         </div>
     </section>
-    <section class="team__section container-fluid pb-5">
+
+    <section id="team" class="team__section container-fluid pb-5">
         <div class="container pb-5 team_container">
             <div class="col-sm-12 col-md-5 px-3 mb-5 pt-5">
                 <h2 class="team__title">TEAM</h2>
@@ -222,7 +226,8 @@
             </div>
         </div>
     </section>
-    <section class="services__section container-fluid">
+
+    <section id="services" class="services__section container-fluid">
         <div class="container services__container ">
             <div class="row services__cards gx-2">
                 <h2 class="side__text">NOSSOS SERVIÇOS</h2>
@@ -255,6 +260,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer__section">
         <div class="footer__content">
             <img src="./assets/img/logo-footer.png" alt="">
@@ -274,6 +280,7 @@
         <div class="footer__bg">
         </div>
     </footer>
+    <script src="./assets/js/xml.js"  type="module" defer></script>
 </body>
 
 </html>
